@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/ac42c3b1f7.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zappos Clone Website</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="fluid-container">
+        <div class="row">
+          <!-- Home section -->
+            <div class="home-page-sec">
+                <nav>
+                    <div class = "d-flex justify-content-center align-items-center">
+                    <img class="nav-logo-img" src="https://m.media-amazon.com/images/G/01/Zappos/25th-birthday-logo/Zappos-25-Years-Logo-Site.svg" />
+                    <div class="nav-search-container d-none d-md-inline">
+                        <input type="text" placeholder="Search for Shoes, clothes, etc." />
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <button>Search</button>
+                    </div>
+                    </div>
+                    <div class="nav-img-container">
+                        <i class="fa-solid fa-magnifying-glass d-md-none"></i>
+                        <i class="fa-regular fa-user d-none d-md-inline"></i>
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <i class="fa-solid fa-bars" id = "hamburgerMenu"></i>
+                    </div>
+                </nav>
+                <hr>
+                <div class = "nav-bottom d-none" id = "navMenu">
+                    <div>
+                    <a href = "#">New</a>
+                    <a href = "#">Women</a>
+                    <a href = "#">Men</a>
+                    <a href = "#">Kids</a>
+                    <a href = "#">Collections</a>
+                    <a href = "#">Brands</a>
+                    <a href = "#">Sale</a>
+                    <a href = "#">Activity</a>
+                    <a href = "#">Gift</a>
+                    </div>
+                    <div>
+                        <a href = "#">Help & Support</a>
+                    </div>
+                </div>
+                <div class = "home-page-content-container">
+                  <div class ="home-left d-none d-md-inline">
+                  </div>
+                    <img src = "https://res.cloudinary.com/dro1qjfpg/image/upload/v1730812429/homePageBg_bzzlzf.png" />
+                    <div class = "home-content">
+                        <h1>Partly Perfection</h1>
+                        <a href = "#">Shop Ankie Booties</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Trending Now section -->
+            <section class = "trending-now-sec">
+              <h1>Trending Now</h1>
+              <div class = "trending-sec-card-container">
+              <div class = "trending-sec-card">
+                  <img src = "https://images.unsplash.com/photo-1469395446868-fb6a048d5ca3?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fHJ1bm5pbmclMjBzaG9lfGVufDB8fDB8fHww" />
+                  <a href = "#">Running Shoes</a>
+              </div>
+              <div class = "trending-sec-card">
+                <img src = "https://redtape.com/cdn/shop/files/RSL1128_1_259a140b-1f83-491a-952b-4517609b4e11.jpg?v=1726209443" />
+                <a href = "#">Lifestyle Sneakers</a>
+            </div>
+            <div class = "trending-sec-card">
+              <img src = "https://www.saintg.in/cdn/shop/products/788tan_1800x1800.jpg?v=1708412112" />
+              <a href = "#">Lace Up Boots</a>
+          </div>
+          <div class = "trending-sec-card">
+            <img src = "https://images-cdn.ubuy.co.in/644de332bea513225f3d0dfe-munlar-womens-high-heels-over-the-knee.jpg" />
+            <a href = "#">Knee Hign Boots</a>
+        </div>
+        <div class = "trending-sec-card">
+          <img src = "https://m.media-amazon.com/images/I/51p+KuQWpeL._AC_UY1000_.jpg" />
+          <a href = "#">Slippers</a>
+      </div>
+      <div class = "trending-sec-card">
+        <img src = "https://s.alicdn.com/@sc04/kf/He3258b30fb444ad59a616d1f3a2d7761b.jpg_720x720q50.jpg" />
+        <a href = "#">Sleepwear</a>
+    </div>
+  </div>
+            </section>
+
+            <!-- Section 3 (More Oomph for Your Holiday) -->
+             <section class = "section-3">
+                <h1>More Oomph for Your Holiday</h1>
+                <div class = "sec3-card-container">
+                    <div class = "sec3-card">
+                        <img src = "https://res.cloudinary.com/dro1qjfpg/image/upload/v1730812657/sec3-img1_f6nsgs.png" />
+                        <p>Pining for comfort? BirkenStock has you covered.</p>
+                        <a href = "#">Shop BirkenStock</a>
+                    </div>
+                    <div class = "sec3-card">
+                      <img src = "https://res.cloudinary.com/dro1qjfpg/image/upload/v1730812685/sec3-img2_e7vzgk.png" />
+                      <p>Wearable, always--build the closet you'll love all season.</p>
+                      <a href = "#">Shop Madewell</a>
+                  </div>
+                  <div class = "sec3-card">
+                    <img src = "https://res.cloudinary.com/dro1qjfpg/image/upload/v1730812711/sec3-img3_szjkwo.png" />
+                    <p>Ah yes. top-notch running sneakers at last.</p>
+                    <a href = "#">Shop Running Sneakers</a>
+                </div>
+                </div>
+             </section>
+
+             <!-- Gift Guide section -->
+              <section class = "gift-guide-sec">
+                <div class = "gift-guide-left-container">
+                  <p>2024 HOLIDAY</p>
+                  <h1>Gift Guide</h1>
+                </div>
+                <div class = "vertical-line">
+
+                </div>
+                <div class = "gift-guide-right-container">
+                  <p>Make spirits bright by gifting shoes, clothing, and accessories from top brands.</p>
+                  <a href = "#">Shop the Guide</a>
+                </div>
+              </section>
+
+              <!-- Crocs section -->
+               <section class = "crocs-sec">
+                    <div class = "crocs-left-container order-2 order-md-1 col-12 col-md-6 col-lg-4">
+                        <h1>Crocs: Treasure Under the Tree</h1>
+                        <p>Gifts, get, wear -- these crowd-favourite are sure to please.</p>
+                        <a href = "#">Shop All Crocs</a>
+                    </div>
+                    <div class = "order-1 order-md-2 col-12 col-md-6 col-lg-8">
+                      <img src = "https://res.cloudinary.com/dro1qjfpg/image/upload/v1730812566/crocs_yzgmt1.png" class = "crocs-img" />
+                    </div>
+               </section>
+
+              <!-- New Arrivals Section -->
+              <section class="new-arrival-sec">
+                <div class="new-arr-img-container col-6 col-lg-3">
+                    <img class="new-arr-sec-img" src="https://m.media-amazon.com/images/G/01/Zappos/2024/Homepage/10.28/NEW-ARRIVALS-FEED-658x916_16._SX650_FMwebp_.jpg" />
+                </div>
+                <div class="new-arr-img-container col-6 col-lg-3">
+                    <img class="new-arr-sec-img" src="https://m.media-amazon.com/images/I/71S0qUJXoML._AC_SR916,732__FMwebp_.jpg" />
+                    <div class="new-arr-color-container">
+                        <div class="new-arr-color1"></div>
+                        <div class="new-arr-color2"></div>
+                    </div>
+                    <h1 class="new-arr-brandName">Merrell</h1>
+                    <p class="new-arr-shoeName">Coldpack 3 Thermo Mid WaterProof</p>
+                    <p class="new-arr-gender">Men's</p>
+                    <h3 class="new-arr-price">$174.95</h3>
+                    <div class="stars-container">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <p>(26)</p>
+                    </div>
+                </div>
+                <div class="new-arr-img-container col-6 col-lg-3">
+                    <img class="new-arr-sec-img" src="https://m.media-amazon.com/images/I/71Y-TwkSmuL._AC_SR920,736_.jpg" />
+                    <div class="new-arr-color-container">
+                        <div class="new-arr-color1"></div>
+                        <div class="new-arr-color2"></div>
+                        <div class="new-arr-color3"></div>
+                        <div class="new-arr-color4"></div>
+                    </div>
+                    <h1 class="new-arr-brandName">Hoka</h1>
+                    <p class="new-arr-shoeName">Bondi 8</p>
+                    <p class="new-arr-gender">Women's</p>
+                    <h3 class="new-arr-price">$132.00</h3>
+                    <div class="stars-container">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <p>(5277)</p>
+                    </div>
+                </div>
+                <div class="new-arr-img-container col-6 col-lg-3">
+                    <img class="new-arr-sec-img" src="https://m.media-amazon.com/images/I/71aZ6MTEz9L._AC_SR920,736_.jpg" />
+                    <div class="new-arr-color-container">
+                        <div class="new-arr-color1"></div>
+                        <div class="new-arr-color2"></div>
+                    </div>
+                    <h1 class="new-arr-brandName">Salamon</h1>
+                    <p class="new-arr-shoeName">Elixir Activ</p>
+                    <p class="new-arr-gender">Men's</p>
+                    <h3 class="new-arr-price">$170.00</h3>
+                    <div class="stars-container">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <p>(26)</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Want Inspiration section -->
+             <section class = "want-insp-sec">
+              <h1>Want inspiration? Visit The Style Room for styling tips and fashion trends.</h1>
+              <div class = "sec3-card-container">
+                  <div class = "sec3-card">
+                      <img class = "want-ins-img" src = "https://res.cloudinary.com/dro1qjfpg/image/upload/v1730812738/want-inspiration-img1_rbwoyr.png" />
+                      <p>Discover an array of the most-standout pieces, curated by our very own stylists.</p>
+                      <a href = "#">Shop Trending Picks</a>
+                  </div>
+                  <div class = "sec3-card">
+                    <img class = "want-ins-img" src = "https://res.cloudinary.com/dro1qjfpg/image/upload/v1730812762/want-inspiration-img2_lhtr9w.png" />
+                    <p>What happens when go-to pieces find their perfect partners? Style magic.</p>
+                    <a href = "#">Shop Favourite Pairings</a>
+                </div>
+                <div class = "sec3-card">
+                  <img class = "want-ins-img3" src = "https://res.cloudinary.com/dro1qjfpg/image/upload/v1730812783/want-inspiration-img3_yg1shx.png" />
+                  <p>Turn every moment into your own personal runaway with this season's must haves.</p>
+                  <a href = "#">Shop Shoes to Fall For</a>
+              </div>
+              </div>
+             </section>
+
+             <!-- Birthday Exclusive Section -->
+              <section class = "Birthday-exclusive-sec">
+                    <h1>Zappos 25th Birthday Exclusives</h1>
+                    <div class = "card-container swiper mySwiper">
+                        <div class = "card-wrapper swiper-wrapper">
+                            <div class="swiper-slide new-arr-img-container">
+                                    <img class="new-arr-sec-img" src="https://m.media-amazon.com/images/I/71AB4eBNMnL._AC_SR920,736_.jpg" />
+                                    <div class="new-arr-color-container">
+                                        <div class="new-arr-color1"></div>
+                                        <div class="new-arr-color3"></div>
+                                    </div>
+                                    <h1 class="bd-exc-brandName">Puma</h1>
+                                    <p class="new-arr-shoeName">Suede Classic XXI</p>
+                                    <p class="new-arr-gender">Men's</p>
+                                    <h3 class="new-arr-price">$60.00</h3>
+                                    <div class="stars-container">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                        <p>(107)</p>
+                                    </div>
+                                </div>
+                            <div class="swiper-slide new-arr-img-container">
+                                    <img class="new-arr-sec-img" src="https://m.media-amazon.com/images/I/71inCWL0GVL._AC_SR920,736_.jpg" />
+                                    <div class="new-arr-color-container">
+                                        <div class="new-arr-color1"></div>
+                                    </div>
+                                    <h1 class="bd-exc-brandName">New Balance Classic</h1>
+                                    <p class="new-arr-shoeName">997R</p>
+                                    <p class="new-arr-gender">Unisex</p>
+                                    <h3 class="new-arr-price">$99.95</h3>
+                                    <div class="stars-container">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                        <p>(15)</p>
+                                    </div>
+                                </div>
+                            <div class="swiper-slide new-arr-img-container">
+                                    <img class="new-arr-sec-img" src="https://m.media-amazon.com/images/I/81D5lmXyCeL._AC_SR920,736_.jpg" />
+                                    <div class="new-arr-color-container">
+                                        <div class="new-arr-color1"></div>
+                                        <div class="new-arr-color2"></div>
+                                        <div class="new-arr-color4"></div>
+                                    </div>
+                                    <h1 class="bd-exc-brandName">KEEN Kids</h1>
+                                    <p class="new-arr-shoeName">Targhee Boundless Alternative Closure Durable (Little Kid/Big Kid)</p>
+                                    <p class="new-arr-gender">Men's</p>
+                                    <h3 class="new-arr-price">$56.92</h3>
+                                    <div class="stars-container">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                        <p>(1)</p>
+                                    </div>
+                                </div>
+                            <div class="swiper-slide new-arr-img-container">
+                                    <img class="new-arr-sec-img" src="https://m.media-amazon.com/images/I/61RwnR+amLL._AC_SR920,736_.jpg" />
+                                    <div class="new-arr-color-container">
+                                        <div class="new-arr-color1"></div>
+                                        <div class="new-arr-color2"></div>
+                                    </div>
+                                    <h1 class="bd-exc-brandName">Vans</h1>
+                                    <p class="new-arr-shoeName">MTE Ultrarange EXO</p>
+                                    <p class="new-arr-gender">Unisex</p>
+                                    <h3 class="new-arr-price">99.95</h3>
+                                    <div class="stars-container">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                        <p>(26)</p>
+                                    </div>
+                                </div>
+                            <div class="swiper-slide new-arr-img-container">
+                                    <img class="new-arr-sec-img" src="https://m.media-amazon.com/images/I/61vWCvBVOML._AC_SR920,736_.jpg" />
+                                    <div class="new-arr-color-container">
+                                        <div class="new-arr-color1"></div>
+                                        <div class="new-arr-color2"></div>
+                                    </div>
+                                    <h1 class="bd-exc-brandName">Steve Madden</h1>
+                                    <p class="new-arr-shoeName">Mayven</p>
+                                    <p class="new-arr-gender">Women's</p>
+                                    <h3 class="new-arr-price">$85.45</h3>
+                                    <div class="stars-container">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                        <p>(15)</p>
+                                    </div>
+                                </div>
+                            <div class="swiper-slide new-arr-img-container">
+                                    <img class="new-arr-sec-img" src="https://m.media-amazon.com/images/I/710WfV6HQfL._AC_SR920,736_.jpg" />
+                                    <div class="new-arr-color-container">
+                                        <div class="new-arr-color1"></div>
+                                        <div class="new-arr-color2"></div>
+                                    </div>
+                                    <h1 class="bd-exc-brandName">Crocs</h1>
+                                    <p class="new-arr-shoeName">Saravannah Bananas Classic Crogs</p>
+                                    <p class="new-arr-gender">Unisex</p>
+                                    <h3 class="new-arr-price">$45.47</h3>
+                                    <div class="stars-container">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <p>(11)</p>
+                                    </div>
+                                </div>
+                        </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                    </div>
+              </section>
+
+              <!-- Subscription section -->
+              <section class = "subscribion-section">
+                <h1 class = "subs-main-heading">Ways to Shop & Save!</h1>
+                <div class = "subs-card-container">
+                    <div class = "subs-card">
+                        <div>
+                            <h1>Join VIP: Earn VIP points and get free expedited shipping.</h1>
+                            <a href = "#">Join VIP</a>
+                        </div>
+                        <img src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuRfq-XvuxN62VQTmiR0oXHVse-d7YWPGeCw&s" />
+                    </div>
+                    <div class = "subs-card">
+                        <div>
+                            <h1>Link your Prime: 2x VIP points and special deals.</h1>
+                            <a href = "#">Link Your Prime</a>
+                        </div>
+                        <img src = "https://w7.pngwing.com/pngs/442/1009/png-transparent-amazon-prime-logo-brand-logos-brands-in-colors-icon.png" />
+                    </div>
+                    <div class = "subs-card">
+                        <div>
+                            <h1>Download App: Track orders and get app-only coupons.</h1>
+                            <a href = "#">Download the App</a>
+                        </div>
+                        <img src = "https://cdn.slidesharecdn.com/ss_thumbnails/phillyshrm-130321153141-phpapp02-thumbnail.jpg?width=560&fit=bounds" />
+                    </div>
+                </div>
+            </section>
+
+            <!-- Join Party section -->
+            <section class = "Join-party-sec">
+                <h1>Join Our List, Get 10% Off</h1>
+                <p>Sign up for Zappos emails—new subscribers get 10% off a future order!* Plus, get early access to sales, coupons, and more. (One code per email address.)</p>
+                <div class = "join-party-input-container">
+                    <input type = "text" placeholder="Email Address" />
+                    <button>Join the Party</button>
+                </div>
+            </section>
+
+            <!-- Footer section -->
+            <footer>
+                <div class="footer-icons-container">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                </div>
+                <div class = "footer-flex-container">
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="footer-heading-container" id="aboutZaptoos">
+                        <p>About Zappos</p>
+                        <p class="plus-sym d-md-none">+</p>
+                    </div>
+                    <hr>
+                    <div class="footer-anchor-container d-none d-md-block" id="aboutZaptoosContent">
+                        <a href="#">About</a><br>
+                        <a href="#">Zapoos ONE</a><br>
+                        <a href="#">Zapoos for Goods</a><br>
+                        <a href="#">Zapoos at Work</a><br>
+                        <a href="#">Get the Zapoos Mobile App</a><br>
+                        <a href="#">Amazon Prime Benefits</a><br>
+                        <a href="#">Zapoos VIP Benefits</a><br>
+                        <a href="#">Coupons & Sales</a><br>
+                        <a href="#">Accessibility Statement</a><br>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="footer-heading-container" id="customerService">
+                        <p>Customer Service</p>
+                        <p class="plus-sym d-md-none">+</p>
+                    </div>
+                    <hr>
+                    <div class="footer-anchor-container d-none d-md-block" id="customerServiceContent">
+                        <a href="#">FAQs</a><br>
+                        <a href="#">Contact Info</a><br>
+                        <a href="#">¿Ayuda en español?</a><br>
+                        <a href="#">Shipping And Returns Policy</a><br>
+                        <a href="#">About Proposition 65</a><br>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="footer-heading-container" id="resourcesFooter">
+                        <p>Resources</p>
+                        <p class="plus-sym d-md-none">+</p>
+                    </div>
+                    <hr>
+                    <div class="footer-anchor-container d-none d-md-block" id="resourcesContent">
+                        <a href="#">Measurement Guide</a><br>
+                        <a href="#">Size Conversion Chart</a><br>
+                        <a href="#">Associates Program</a><br>
+                        <a href="#">Jobs</a><br>
+                        <a href="#">Press Kit & Brand Inquiries</a><br>
+                        <a href="#">Site Map</a><br>
+                        <a href="#">Take Survey</a><br>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="footer-heading-container" id="exploreZappos">
+                        <p>Explore Zappos</p>
+                        <p class="plus-sym d-md-none">+</p>
+                    </div>
+                    <hr>
+                    <div class="footer-anchor-container d-none d-md-block" id="exploreZapposContent">
+                        <a href="#">Brands</a><br>
+                        <a href="#">Clothing</a><br>
+                        <a href="#">The Style Room</a><br>
+                        <a href="#">Eyewear</a><br>
+                        <a href="#">New Arrivals</a><br>
+                        <a href="#">Running</a><br>
+                        <a href="#">Jackets</a><br>
+                        <a href="#">Shoes</a><br>
+                        <a href="#">Watches</a><br>
+                        <a href="#">Zappos Adaptive</a><br>
+                        <a href="#">All Departments</a><br>
+                    </div>
+                </div>
+                </div>
+                
+                <hr>
+                <div class = "footer-bottom">
+                    <p>© 2009–2024 - Zappos.com LLC or its affiliates</p>
+                    <div>
+                        <a href = "#">Terms of Use /</a>
+                        <a href = "#">Privacy Policy /</a>
+                        <a href = "#">Fur Policy /</a>
+                        <a href = "#">Interest-Based Ads /</a>
+                        <a href = "#">24/7 Customer Service (800) 927-7671</a>
+                    </div>
+                </div>
+            </footer>
+
+        </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>
