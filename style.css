@@ -698,6 +698,7 @@ nav {
 
 .join-party-input-container input {
     height: 50px;
+    min-width: 300px;
     width: 500px;
     max-width: 650px;
     border: 1px solid #a4a6a5;
